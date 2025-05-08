@@ -7,7 +7,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   return( 
   <>
-    {!isLoaded && <LoadingScreen onComplete={() => isLoaded(true)}/> }
+    {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/> }
   </>
   );
 }
